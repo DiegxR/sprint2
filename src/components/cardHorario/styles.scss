@@ -1,0 +1,29 @@
+.secHour{
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    box-shadow: -2px 6px 20px -14px rgba(47,47,47,1);
+    border-radius: 10px;
+    &__time{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    &__icon{
+        display: flex;
+        gap: 10px;
+    }
+}
+@media (min-width: 768px){
+    .secHour{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

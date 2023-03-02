@@ -1,0 +1,64 @@
+@import '../../vars.scss';
+.openCalendar{
+    height: 35px;
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+    .dateInfo{
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            color: gray;
+        }
+        h4{
+            margin: 0px;
+        }
+    }
+}
+
+.calendarContainer{
+    margin: 0 20px 0 20px;
+    background-color: white;
+    border-radius: 10px;
+    height: 450px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .head{
+        display: flex;
+        justify-content: space-between;
+    }
+    .rdrDayHovered{
+        span{
+            background-color: $btn-active;
+            color: white;
+            border-radius: 15px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+        }
+    }
+   
+}
+.btnDate{
+    background: $btn-active;
+    padding: 8px;
+    display: flex;
+    gap: 15px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    align-self: flex-end;
+    border-radius: 20px;
+}
+@media (min-width: 768px){
+    .calendarContainer{
+        width: 600px;
+    }
+}

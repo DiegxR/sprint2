@@ -1,0 +1,76 @@
+@import '../../vars.scss';
+
+.secHorario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    &__text{
+        h2:first-child{
+            font-size: 2rem;
+            margin-bottom: 25px;
+            
+        }
+        h2:last-child{
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .ptext1{
+            color: gray;
+            margin-bottom: 25px;
+        }
+        .ptext2{
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    &__button {
+        button {
+          background: transparent;
+          border: 2px solid $btn-active;
+          padding: 10px 20px;
+          border-radius: 20px;
+          color: $btn-active;
+          font-size: 18px;
+          transition: 0.5s;
+          &:hover {
+            background-color: $btn-active;
+            color: white;
+            cursor: pointer;
+            transition: 0.5s;
+          }
+        }
+      }
+}
+.SecVuelos::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .SecVuelos::-webkit-scrollbar-thumb {
+    background-color: $btn-active;
+    border-radius: 10px;
+  }
+  .SecVuelos::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  .SecVuelos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 25px;
+  }
+@media (min-width: 768px){
+    .secHorario{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: start;
+        text-align: left;
+    }
+}

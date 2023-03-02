@@ -1,0 +1,16 @@
+.secPlane{
+    display: flex;
+    justify-content: center;
+}
+.planes{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    button{
+        border-radius: 12px;
+        width: 100px;
+        padding: 3px;
+    }
+}

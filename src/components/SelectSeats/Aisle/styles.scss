@@ -1,0 +1,10 @@
+.secAisle{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &__aisle{
+       display: flex;
+       flex-direction: column;
+       gap: 5px; 
+    }
+}

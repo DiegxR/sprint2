@@ -1,0 +1,47 @@
+.openPassengers{
+    width: 100%;
+    p{
+        color: gray;
+    }
+}
+.counters{
+    background: white;
+    padding: 35px;
+    padding-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    img{
+        cursor: pointer;
+    }
+    .x{
+        
+        width: 20px;
+        align-self: flex-end;
+        transform: translate(20px, -5px);
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .counter{
+        display: flex;
+        padding: 15px 5px;
+
+        border: 1px solid gray;
+        border-radius: 10px;
+        width: 50%;
+        height: 25px;
+        justify-content: space-evenly;
+        align-items: center;
+        h1{
+            border: 1px solid gray;
+            height: 32px;
+            width: 30px;
+            text-align: center;
+        }
+        
+    }
+}

@@ -1,0 +1,57 @@
+.icon__seat {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .available, .colums, .selected, .ocupado {
+    border: 2px solid #9E2478;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .available:hover, .colums:hover, .selected:hover, .ocupado:hover {
+    transition: 0.5s;
+    background: #9E2478;
+  }
+  
+  .ocupado {
+    background-color: #bfbdbf;
+    border: 2px solid #bfbdbf;
+    cursor: no-drop;
+  }
+  
+  .selected {
+    background-color: #9E2478;
+    border: 2px solid #9E2478;
+    color: white;
+  }
+  
+  .colums {
+    background-color: white;
+    border: 2px solid white;
+  }
+  .colums:hover {
+    transition: 0.5s;
+    background: white;
+    cursor: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .icon-seat, .available, .ocupado, .selected, .colums {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  @media (min-width: 992px) {
+    .icon-seat, .available, .ocupado, .selected, .colums {
+      width: 35px;
+      height: 35px;
+    }
+}

@@ -1,0 +1,42 @@
+@import '../../vars.scss';
+
+.payments{
+    padding: 20px;
+    &__title{
+    margin-bottom: 20px;
+    margin-left: 15px;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+        background: $bg-form;
+        border-radius: 15px;
+        width: 90%;
+        margin: auto;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.19);
+        article{
+            p{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    img{
+        width: 90px;
+        height: 70px;
+    }
+}
+
+@media (min-width:800px) {
+    .payments__container{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

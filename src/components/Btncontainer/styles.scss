@@ -1,0 +1,42 @@
+@import '../../vars.scss';
+.type{
+    border: 1px solid gray;
+    background-color: $bg-btn;
+    display: flex;
+    width: 80%;
+    min-height: 30px;
+    padding: 3px;
+    padding-left: 10px;
+    align-items: center;
+    border-radius: 5px
+}
+.flight-select{
+    border: 1px solid gray;
+    background-color: $bg-btn;
+    display: flex;
+    width: 80%;
+    min-height: 30px;
+    padding: 3px;
+    padding-left: 10px;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+}
+.info-flight{
+    border: 1px solid gray;
+    background-color: $bg-btn;
+    display: flex;
+    width: 80%;
+    min-height: 58px;
+    padding: 3px;
+    padding-left: 10px;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+}
+@media (min-width:800px) {
+    .type{
+        width: 70%;
+    }
+    
+}

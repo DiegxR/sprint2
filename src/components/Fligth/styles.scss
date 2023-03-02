@@ -1,0 +1,110 @@
+
+.flight{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    height: 40px;
+    width: 100%;
+    &__type{
+        color: gray;
+        margin: 0px;
+        padding: 0px;
+    }
+    &__value{
+        margin: 0px;
+        padding: 0px;
+        color: black;
+    }
+}
+
+    .options{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin: 0px;
+        margin-top: -200px;
+        width: 100%;
+        background-color: white;
+        padding: 15px;
+        border-radius: 15px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &__head{
+            width: 100%;
+            margin: 0 4px 0 4px;
+            padding-right: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .datalist{
+            padding-left: 10px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            gap: 10px;
+            border-radius: 3px;
+            .react-datalist-input{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &__container{
+                    margin-top: 25px;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 90%;
+                    height: 50px;
+                    color: black;
+                }
+                &__textbox{
+                    margin-top: 5px;
+                    width: 80%;
+                    border: none;
+                    outline: none;
+                    background-color: white;
+                    color: black;
+                }
+                &__listbox{
+                    
+                    margin-top: 10px;
+                    background-color: white;
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    border-radius: 0 0 10px 10px ;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: baseline;
+                    padding: 0 15px 15px 15px;
+                    
+                }
+                &__listbox-option{
+                    width: 100%;
+                    border: 1px solid black;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+    @media (min-width:800px) {
+        .flight{
+            flex-direction: column-reverse;
+            height: 70px;
+            align-items: center;
+            padding: 0px;
+            &__type{
+                color: gray;
+                margin: 0px;
+                padding: 0px;
+            }
+            &__value{
+                font-size: 30px;
+            }
+        }
+    }

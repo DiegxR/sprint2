@@ -1,0 +1,23 @@
+.secInfoVuelo{
+    width: 100%;
+    padding: 5% 5%;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+  
+}
+@media (min-width: 768px){
+    .secInfoVuelo{
+        padding: 5% 5%;
+        flex-direction: row;
+        padding-right: 1%;
+        &__fact{
+        flex-grow: 1;
+        }
+     }
+     .secSeats{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+     }
+}
